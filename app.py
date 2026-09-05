@@ -1,8 +1,15 @@
 from flask import Flask, render_template
 import json
 from prometheus_flask_exporter import PrometheusMetrics
+from prometheus_client import generate_latest, CONTENT_TYPE_LATEST
 
 app = Flask(__name__)
+metrics = PrometheusMetrics(app)
+
+
+@app.route("/metrics")
+def metrics_endpoint():
+    return generate_latest(), 200, {"Content-Type": CONTENT_TYPE_LATEST}
 metrics = PrometheusMetrics(app, path="/metrics")
 
 
