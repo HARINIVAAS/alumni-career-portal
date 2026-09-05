@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs - Alumni Network</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+```
+<nav>
+    <h2>Alumni Network</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/alumni">Alumni</a>
+        <a href="/jobs">Jobs</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1>Career Opportunities</h1>
+    <p>Find jobs and start your career journey.</p>
+</section>
+
+<section class="jobs-container">
+
+    {% for job in jobs %}
+
+    <div class="job-card">
+        <h3>{{ job.title }}</h3>
+        <p><strong>Company:</strong> {{ job.company }}</p>
+        <p><strong>Location:</strong> {{ job.location }}</p>
+        <p><strong>Experience:</strong> {{ job.experience }}</p>
+        <button>Apply Now</button>
+    </div>
+
+    {% endfor %}
+
+</section>
+    
+```
+
+</body>
+</html>

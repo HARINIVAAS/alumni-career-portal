@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Arun Kumar",
+        "role": "Software Engineer",
+        "company": "TCS",
+        "batch": "2023"
+    },
+    {
+        "name": "Priya S",
+        "role": "Data Analyst",
+        "company": "Infosys",
+        "batch": "2022"
+    },
+    {
+        "name": "Rahul M",
+        "role": "DevOps Engineer",
+        "company": "HCLTech",
+        "batch": "2021"
+    }
+]

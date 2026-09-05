@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni - Alumni Network</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+```
+<nav>
+    <h2>Alumni Network</h2>
+    <div>
+        <a href="/">Home</a>
+        <a href="/alumni">Alumni</a>
+        <a href="/jobs">Jobs</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<section class="page-header">
+    <h1>Our Alumni</h1>
+    <p>Connect with alumni and explore their career journeys.</p>
+</section>
+
+<section class="alumni-container">
+
+    {% for person in alumni %}
+
+    <div class="alumni-card">
+        <h3>{{ person.name }}</h3>
+        <p><strong>{{ person.role }}</strong></p>
+        <p>{{ person.company }}</p>
+        <p>Batch: {{ person.batch }}</p>
+    </div>
+
+    {% endfor %}
+
+</section>
+```
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Junior Python Developer",
+        "company": "ABC Technologies",
+        "location": "Chennai",
+        "experience": "Fresher"
+    },
+    {
+        "title": "Cloud Support Engineer",
+        "company": "XYZ Solutions",
+        "location": "Bangalore",
+        "experience": "0-1 Year"
+    },
+    {
+        "title": "DevOps Intern",
+        "company": "Tech Solutions",
+        "location": "Coimbatore",
+        "experience": "Fresher"
+    }
+]
