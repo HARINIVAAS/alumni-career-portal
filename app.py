@@ -3,7 +3,7 @@ import json
 from prometheus_flask_exporter import PrometheusMetrics
 
 app = Flask(__name__)
-metrics = PrometheusMetrics(app)
+metrics = PrometheusMetrics(app, path="/metrics")
 
 
 def load_json(filename):
