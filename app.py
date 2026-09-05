@@ -1,4 +1,3 @@
-```python
 from flask import Flask, render_template
 import json
 from prometheus_client import generate_latest, CONTENT_TYPE_LATEST
@@ -42,4 +41,3 @@ def metrics():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
-```
